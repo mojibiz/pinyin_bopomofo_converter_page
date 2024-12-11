@@ -1,6 +1,6 @@
 
 <h2>Pinyin to Bopomofo Converter</h2>
-Welcome to the Pinyin to Bopomofo Converter project! This web application allows users to easily convert Pinyin text with tone marks into Bopomofo, a phonetic system used in Mandarin Chinese.
+Welcome to the Pinyin to Bopomofo Converter project! This web application allows users to easily convert Pinyin text with tone marks into Bopomofo, a phonetic system used in Taiwan.
 <br><br>
 
 
