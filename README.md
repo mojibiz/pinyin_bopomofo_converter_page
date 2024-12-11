@@ -1,4 +1,4 @@
-
+---
 ![pinyin_bopomofo](https://github.com/user-attachments/assets/9d0f605e-fdfc-40bb-aa8c-0e7b9729218a)
 
 
@@ -12,3 +12,4 @@ How It Works
 The application utilizes a JavaScript class, PinyinBopomofo, which contains mappings for Pinyin tones, initials, finals, and special syllables. The conversion process involves normalizing the input Pinyin, identifying its components, and then mapping them to their corresponding Bopomofo characters.
 Getting Started
 To use the converter, simply clone this repository and open the index.html file in your web browser. You can also access the live demo at ![Pinyin to Bopomofo Converter] (https://mojibiz.github.io/pinyin_bopomofo_converter_page/).
+---
