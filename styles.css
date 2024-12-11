@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.converter {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-section, .output-section {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+#convertBtn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s;
+}
+
+#convertBtn:hover {
+    background-color: #2980b9;
+}
+
+.output-container {
+    position: relative;
+    min-height: 100px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.8rem;
+    padding-right: 35px; /* Make space for copy button */
+}
+
+.output {
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+    min-height: 80px;
+}
+
+.copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    margin: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-button:hover {
+    opacity: 1;
+    background-color: #e0e0e0;
+}
+
+.copy-button:active {
+    background-color: #d0d0d0;
+}
+
+.copy-button.copied {
+    background-color: #4CAF50;
+    color: white;
+    opacity: 1;
+}
+
+.copy-button svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* Hide copy button on mobile unless output is hovered/focused */
+@media (max-width: 768px) {
+    .copy-button {
+        opacity: 0.4;
+    }
+    
+    .output-container:hover .copy-button,
+    .output-container:focus-within .copy-button {
+        opacity: 1;
+    }
+}
